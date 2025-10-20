@@ -5,6 +5,16 @@ body {
   background-color: white;
 }
 
+main ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin: 9px;
+  gap: 12px;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -79,11 +89,16 @@ main {
   justify-content: center;
   background-color: white;
   padding: 20px;
+  flex: 1;
 }
 
 main {
   width: 100%;
   max-width: 479px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .post {
@@ -91,11 +106,42 @@ main {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  gap: 9 px;
 }
 
-.post img {
-  width: 100%;
+.post > img {
+  width: 350px;
   height: 100%;
+  object-fit: cover;
   display: block;
+  display: flex;
+  align-items: center;
+}
+
+.post ul img {
+  width: 30px;
+  height: 30px;
+}
+
+main > .heart img {
+  height: 20px;
+}
+
+main img {
+  width: 21px;
+  height: 19px;
+}
+li {
+  width: 29px;
+  height: 29px;
+}
+
+img[src*="johndoe.jpg"] {
+  border-radius: 50%;
+}
+
+img [src*="mati.png"] {
+  border-radius: 50%;
 }
