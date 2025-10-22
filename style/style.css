@@ -143,5 +143,5 @@ img[src*="johndoe.jpg"] {
 }
 
 img [src*="mati.png"] {
-  border-radius: 50%;
+  border-radius: 51%;
 }
