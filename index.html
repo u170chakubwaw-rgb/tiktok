@@ -4,112 +4,178 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TikTok</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
+
   <body>
     <nav aria-label="Główne menu">
       <div class="logo">
         <img src="./assets/titkoklogo.png" alt="Logo TikTok" />
         <h1>TikTok</h1>
       </div>
-      <input type="szukaj" />
+
+      <input type="text" placeholder="Szukaj..." />
+
       <ul class="menu">
         <li>
           <a href="#">
-            <img class="icon" alt="Strona główna" src="./assets/home.svg" />
+            <img class="icon" src="./assets/home.svg" alt="Strona główna" />
             <span>Dla Ciebie</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk Odkryj"
-              src="./assets/compass.svg"
-            />
+            <img class="icon" src="./assets/compass.svg" alt="Odkryj" />
             <span>Odkryj</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk Obserwowani"
-              src="./assets/followed.svg    "
-            />
+            <img class="icon" src="./assets/followed.svg" alt="Obserwowani" />
             <span>Obserwowani</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk Znajomi"
-              src="./assets/friends.svg"
-            />
+            <img class="icon" src="./assets/friends.svg" alt="Znajomi" />
             <span>Znajomi</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img class="icon" alt="przycisk live" src="./assets/johndoe.jpg" />
-            <span>live</span>
+            <img class="icon" src="./assets/johndoe.jpg" alt="Live" />
+            <span>Live</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk Wiadomości"
-              src="./assets/messages.svg"
-            />
+            <img class="icon" src="./assets/messages.svg" alt="Wiadomości" />
             <span>Wiadomości</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk aktywnosc"
-              src="./assets/aktywnosc.svg"
-            />
+            <img class="icon" src="./assets/aktywnosc.svg" alt="Aktywność" />
             <span>Aktywność</span>
           </a>
         </li>
+
         <li>
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk przeslij"
-              `
-              src="./assets/przeslij.svg"
-            />
+            <img class="icon" src="./assets/przeslij.svg" alt="Prześlij" />
             <span>Prześlij</span>
           </a>
         </li>
+
         <li>
           <a href="#">
             <img
               class="icon"
-              alt="przycisk profil"
-              src="./assets/johndoe.jpg"
+              src="./assets/paniodgeografi.jpg"
+              alt="Profil użytkownika"
             />
-            <span>profil</span>
+            <span>Profil</span>
           </a>
         </li>
-        <li>
+
+        <li class="menu-more">
           <a href="#">
-            <img
-              class="icon"
-              alt="przycisk Więcej"
-              src="./assets/threedots.svg"
-            />
+            <img class="icon" src="./assets/threedots.svg" alt="Więcej" />
             <span>Więcej</span>
           </a>
         </li>
       </ul>
+
+      <hr />
+
+      <div class="followed-section">
+        <h3>Obserwowane konta</h3>
+        <div class="followed-list">
+          <div class="followed-item">
+            <img class="followed-acc" src="./assets/adi.jpg" alt="adi" />
+            <span class="followed-name">sigma</span>
+          </div>
+
+          <div class="followed-item">
+            <img
+              class="followed-acc"
+              src="./assets/adilukasikk.jpg"
+              alt="adilukasik"
+            />
+            <span class="followed-name">adi lukasik</span>
+          </div>
+
+          <div class="followed-item">
+            <img class="followed-acc" src="./assets/jacek.jpg" alt="jacek" />
+            <span class="followed-name">jacek boss</span>
+          </div>
+
+          <div class="followed-item">
+            <img
+              class="followed-acc"
+              src="./assets/wladcaswiatow.jpg"
+              alt="wladcaswiatow"
+            />
+            <span class="followed-name">władca światów</span>
+          </div>
+
+          <div class="followed-item">
+            <img
+              class="followed-acc"
+              src="./assets/kubasawulski.jpg"
+              alt="kubasawulski"
+            />
+            <span class="followed-name">elektryk</span>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <main></main>
+    <div class="content">
+      <main>
+        <div class="post">
+          <div class="post-content">
+            <img src="./assets/kott.png" alt="Post TikTok" />
+            <span class="post-username">@dżondoł</span>
+            <p class="post-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, niga quis nostrud exercitation ullamco
+              laboris.
+            </p>
+          </div>
+          <ul class="post-actions">
+            <li><img src="./assets/johndoe.jpg" alt="Profil autora" /></li>
+            <li>
+              <img src="./assets/heart.svg" alt="Polub" />
+              <span class="counter">9</span>
+            </li>
+            <li>
+              <img src="./assets/comment.png" alt="Komentarze" />
+              <span class="counter">458</span>
+            </li>
+            <li>
+              <img src="./assets/save.svg" alt="Zapisz" />
+              <span class="counter">5528</span>
+            </li>
+            <li>
+              <img src="./assets/share.svg" alt="Udostępnij" />
+              <span class="counter">1000</span>
+            </li>
+            <li><img src="./assets/mati.png" alt="Muzyka" /></li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <div class="right-side">
+      <img class="up-arrow" src="/assets/up-arrow.jpg" alt="" />
+      <img class="down-arrow" src="/assets/up-arrow.jpg" alt="" />
+    </div>
   </body>
 </html>
