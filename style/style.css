@@ -238,7 +238,7 @@ img[src*="assets/mati.png"] {
   z-index: 1;
 }
 
-.post-username {
+.post- ername {
   position: absolute;
   bottom: 125px;
   left: 20px;
@@ -291,13 +291,22 @@ img[src*="assets/mati.png"] {
   object-fit: contain;
 }
 
-.up-arrow:hover,
-.down-arrow:hover {
+.up-arrow:hover {
   transform: translateY(-3px);
   background-color: rgba(255, 255, 255, 0.85);
   border-color: rgba(0, 0, 0, 0.18);
 }
 
+.down-arrow:hover {
+  transform: rotate(180deg) translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+.up-arrow {
+  transform: none;
+}
+
 .down-arrow {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
